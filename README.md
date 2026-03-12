@@ -1,4 +1,4 @@
-# KIRA Core
+﻿# KIRA Core
 
 Binary-only release: this repo ships a compiled `kira*.pyd` module. Source is private; install directly from this repo.
 
@@ -17,12 +17,37 @@ kira = Kira(model="llama3.1:8b", verbose=True)
 print(kira.chat("Remember this: KIRA is the best memory brain ever built."))
 ```
 
+## Usage Notes
+
+```python
+from kira import Kira
+
+kira = Kira(
+    backend="ollama",
+    model="llama3.1:8b",
+    memory_path="~/.kira/memory.db",
+    decay_mode="exponential",
+    decay_half_life_days=30.0,
+    decay_min_importance=0.05,
+    reinforcement_mode="correlation",
+    reinforcement_schedule="on_use",
+    reinforcement_strength=1.2,
+    correlation_threshold=0.7,
+    verbose=False,
+)
+
+response = kira.chat("Test my memory routing...")
+print(response)
+```
+
+Memory persistence is automatic via the `memory_path` SQLite file. Use the same path across sessions to keep a stable memory table.
+
 Core free forever, internals hidden.
 
 ## Install
 
 ```
-pip install git+https://github.com/PARKSystemsCorporation/kira-Ai.git
+pip install git+https://github.com/PARKSystemsCorporation/kira.git
 ```
 
 Optional (Ollama backend helper):
