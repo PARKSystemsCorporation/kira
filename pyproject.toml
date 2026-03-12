@@ -1,0 +1,23 @@
+﻿[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kira"
+version = "0.1.0"
+description = "Lightweight local AI memory routing and orchestration layer (KIRA core)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Private :: Do Not Upload",
+]
+
+[project.optional-dependencies]
+ollama = ["ollama"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["kira"]
