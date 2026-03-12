@@ -36,3 +36,31 @@ pytest_cache/
 # OS files
 .DS_Store
 Thumbs.db
+
+# ========================
+# KIRA-SPECIFIC (IMPORTANT)
+# ========================
+
+# Never commit any memory databases — these contain real user data
+*.db
+*.sqlite
+*.sqlite3
+memory.db
+kira_memory.db
+
+# Local KIRA folders (user data)
+.kira/
+~/.kira/
+
+# Environment / config files
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+logs/
+
+# Temporary files from editable install or testing
+temp/
+tmp/

@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "kira"
 version = "0.1.0"
-description = "Lightweight local AI memory routing and orchestration layer (KIRA core)"
+description = "KIRA core — lightweight local AI memory routing + decay/reinforcement layer (free forever, hidden sauce)"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"

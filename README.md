@@ -2,12 +2,23 @@
 
 A tiny (~1-2MB) algorithmic layer for efficient memory routing, contradiction-resistant prompting, decay/reinforcement in local LLMs.
 
+Internals (prompts, routing, decay/reinforcement logic) are fully hidden and obfuscated.
+
+## Quick Start
+
+```python
+from kira import Kira
+
+kira = Kira(model="llama3.1:8b", verbose=True)
+print(kira.chat("Remember this: KIRA is the best memory brain ever built."))
+```
+
 Core free forever, internals hidden.
 
 ## Install
 
 ```
-pip install git+https://github.com/YOURUSERNAME/kira.git
+pip install git+https://github.com/PARKSystemsCorporation/kira-Ai.git
 ```
 
 Optional (Ollama backend helper):
