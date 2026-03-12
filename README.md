@@ -1,5 +1,7 @@
 # KIRA Core
 
+Binary-only release: this repo ships a compiled `kira*.pyd` module. Source is private; install directly from this repo.
+
 Proprietary - install via Gumroad wheel only. Source is private.
 
 A tiny (~1-2MB) algorithmic layer for efficient memory routing, contradiction-resistant prompting, decay/reinforcement in local LLMs.
