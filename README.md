@@ -1,4 +1,6 @@
-﻿# KIRA Core
+# KIRA Core
+
+Proprietary - install via Gumroad wheel only. Source is private.
 
 A tiny (~1-2MB) algorithmic layer for efficient memory routing, contradiction-resistant prompting, decay/reinforcement in local LLMs.
 
